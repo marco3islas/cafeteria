@@ -2,18 +2,36 @@
   <div class="contenedor">
 
 			<nav class='menu'>
-			 <a href="#" id='btn-acerca-de'>ACERCA DE</a> 
-			 <a href="#" id='btn-menu'>MENU</a>
-			 <a href="#" id='btn-galeria'>GALERIA</a>
-			 <a href="#" id='btn-contacto'>CONTACTO</a>
+        <!-- Iconos de redes -->
+    <ul class="media">
+      <a [href]=" infoPaginaService.info.facebook " traget='_blank'>
+        <li>
+          <i class="fab fa-facebook"></i>
+        </li>
+      </a>
+      <a [href]="infoPaginaService.info.github" target='_blank'>
+        <li>
+          <i class="fab fa-github"></i>
+        </li>
+      </a>
+      <a [href]="infoPaginaService.info.twitter" target='_blank'>
+        <li>
+          <i class="fab fa-twitter"></i>
+        </li>
+      </a>
+    </ul >
+        <!-- Menu navbar -->
+			 <a class='animated bounceInDown fast' routerLink="about" routerLinkActive="active"  id='btn-acerca-de'>ACERCA DE</a> 
+			 <a class='animated bounceInDown' routerLink="menu" routerLinkActive="active" id='btn-menu'>MENU</a>
+			 <a class='animated bounceInDown slow' routerLink="galeria" routerLinkActive="active" id='btn-galeria'>GALERIA</a>
+			 <a class='animated bounceInDown slowM' routerLink="contacto" routerLinkActive="active" id='btn-contacto'>CONTACTO</a>
 			</nav>
 			<div class="textos">
-				<h1 class='nombre'>CAFETERIA <span>Mi Lugar</span></h1>
+        <h1 class='nombre'>{{ infoPaginaService.info.nombre_corto }} <span>{{ infoPaginaService.info.titulo}}</span></h1>
 				<h3> 
 					 La mejor cafeteria, cerca de ti.
 				</h3>
 			</div>
 		</div>
+  <div id="btnArriba">Arriba</div>
 </header>
-        <section class="main">
-        <div id="btnArriba">Arriba</div>
