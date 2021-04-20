@@ -1,40 +1,42 @@
 <header>
   <div class="contenedor">
-			 <a [ngClass]="'ocultar'" class='animated icon bounceInDown' routerLinkActive="active" id='icon'> <i class="fa fa-bars icon"></i></a>
-
-			<nav class='menu'>
-        <!-- Iconos de redes -->
-    <ul class="media">
-      <a [href]=" infoPaginaService.info.facebook " traget='_blank'>
-        <li>
-          <i class="fab fa-facebook"></i>
-        </li>
-      </a>
-      <a [href]="infoPaginaService.info.github" target='_blank'>
-        <li>
-          <i class="fab fa-github"></i>
-        </li>
-      </a>
-      <a [href]="infoPaginaService.info.twitter" target='_blank'>
-        <li>
-          <i class="fab fa-twitter"></i>
-        </li>
-      </a>
-    </ul >
-        <!-- Menu navbar -->
-        <div [ngClass]="'mostrar'" class="menuResponsive">
-			 <a  class='Animated bounceInDown fast' routerLink="about" routerLinkActive="active"  id='btn-acerca-de'>ACERCA DE</a> 
-			 <a  class='Animated bounceInDown' routerLink="menu" routerLinkActive="active" id='btn-menu'>MENU</a>
-			 <a  class='Animated bounceInDown slow' routerLink="galeria" routerLinkActive="active" id='btn-galeria'>GALERIA</a>
-			 <a  class='Animated bounceInDown slowM' routerLink="contacto" routerLinkActive="active" id='btn-contacto'>CONTACTO</a>
-        </div>
-			</nav>
-			<div class="textos">
+    <a class='animated icon bounceInDown' routerLinkActive="active" id='icon'>
+      <i class="fa fa-bars icon"></i>
+    </a>
+    <nav class='menu'>
+      <!-- Iconos de redes -->
+      <ul class="media">
+        <a [href]=" infoPaginaService.info.facebook " traget='_blank'>
+          <li>
+            <i class="fab fa-facebook"></i>
+          </li>
+        </a>
+        <a [href]="infoPaginaService.info.github" target='_blank'>
+          <li>
+            <i class="fab fa-github"></i>
+          </li>
+        </a>
+        <a [href]="infoPaginaService.info.twitter" target='_blank'>
+          <li>
+            <i class="fab fa-twitter"></i>
+          </li>
+        </a>
+      </ul>
+      <!-- Menu navbar -->
+      <div class="menuResponsive">
+        <a  class='Animated bounceInDown fast' routerLink="about" routerLinkActive="active"  id='btn-acerca-de'>ACERCA DE</a>
+        <a  class='Animated bounceInDown' routerLink="menu" routerLinkActive="active" id='btn-menu'>MENU</a>
+        <a  class='Animated bounceInDown slow' routerLink="galeria" routerLinkActive="active" id='btn-galeria'>GALERIA</a>
+        <a  class='Animated bounceInDown slowM' routerLink="contacto" routerLinkActive="active" id='btn-contacto'>CONTACTO</a>
+      </div>
+    </nav>
+    <div class="textos">
         <h1 class='nombre'>{{ infoPaginaService.info.nombre_corto }} <span>{{ infoPaginaService.info.titulo}}</span></h1>
 				<h3> 
 					 La mejor cafeteria, cerca de ti.
 				</h3>
 			</div>
-		</div>
+  </div>
+		
   <div id="btnArriba">Arriba</div>
 </header>

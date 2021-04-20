@@ -34,6 +34,9 @@ header .contenedor{
 	position: relative;
 	height: 450px;
 }
+header .icon{
+    display: none;
+}
 header .menu {
 	width: 100%;
     background-color: rgba(255, 255, 255, .3);
@@ -89,6 +92,14 @@ header .textos .nombre span, header .textos h3{
 header .textos h3{
 	font-size: 25px;
 	font-style: italic;
+}
+@media only screen and(max-width: 1000px){
+   header .icon{
+        display: block;
+    }
+    header .menu .menuResponsive{
+        display: none;
+    }
 }
 
 /*************************************************Acercade*/
