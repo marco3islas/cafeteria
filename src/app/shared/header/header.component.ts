@@ -8,6 +8,8 @@ import {InfoPaginaService} from 'src/app/services/info-pagina.service';
 })
 export class HeaderComponent implements OnInit {
 
+icon = document.getElementById('icon');
+
   constructor( public infoPaginaService: InfoPaginaService) { }
 
   ngOnInit(): void {
